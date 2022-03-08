@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load cms_tags %}
+
+{% block title %}{% page_attribute "page_title" %}{% endblock title %}
+
+{% block content %}
+<div class="post-item clearfix">
+	<img src="assets/img/blog/blog-recent-4.jpg" alt="">
+	<h4><a href="blog-single.html">Laborum corporis quo dara net para</a></h4>
+	<time datetime="2020-01-01">Jan 1, 2020</time>
+</div>
+	{% placeholder "content" or %}
+<div class="entry-content">
+	<p>
+		Aspernatur rerum perferendis et sint. Voluptates cupiditate voluptas atque quae. Rem veritatis rerum enim et autem. Saepe atque cum eligendi eaque iste omnis a qui.
+		Quia sed sunt. Ea asperiores expedita et et delectus voluptates rerum. Id saepe ut itaque quod qui voluptas nobis porro rerum. Quam quia nesciunt qui aut est non omnis. Inventore occaecati et quaerat magni itaque nam voluptas. Voluptatem ducimus sint id earum ut nesciunt sed corrupti nemo.
+	</p>
+	<div class="read-more">
+		<a href="blog-single.html">Read More</a>
+	</div>
+</div>
+	{% endplaceholder %}
+{% endblock content %}
